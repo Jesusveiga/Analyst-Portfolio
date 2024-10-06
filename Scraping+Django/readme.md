@@ -1,9 +1,11 @@
-Se ha creado un pequeño proyecto de web scraping con Python, culminándolo con su framework de trabajo Django.
+A small web scraping project has been created with Python, culminating with its framework Django.
 
-Por un lado se ha hecho un scraper con Selenium (que posteriormente ha pasado a ser headless por ser consecuente con la app).
-Se han scrapeado diferentes páginas web de viviendas en Portugal, obteniendo información presente en cada una de ellas referente a cada vivienda (esto es parte del html). Dado que para la obtención de cierta infromación se tenía que hacer un poco de web crawling,
-se ha tenido que interactuar con JavaScript de la página, y es por este motivo por el que se ha usado Selenium y no únicamente BeautifulSoup u otras librerías.
+On the one hand, a scraper was made with Selenium (which later became headless because it was consistent with the app).
+We have scraped different web pages of houses in Portugal, obtaining information present in each of them about each house (this is part of the html). Given that in order to obtain certain information it was necessary to do some web crawling,
+we had to interact with the JavaScript of the page, and for this reason we used Selenium and not only BeautifulSoup or other libraries.
 
-Se ha integrado el scraper con Django para ofrecer una interfaz en la que el usuario pueda buscar por nombre exacto de la vivienda, localización, rango de precios y pueda elegir también el número de resultados que quiere obtener. 
-Internamente la aplicación llama al scraper con esos argumentos de entrada en la función, se comprueban los inputs a nivel de filtros y cuando se llegue al número de resultados fijado, se devuelve en forma de tabla en una url al usuario.
-A modo de curiosidad se ha experimentado con un poco de JavaScript en el Django para poder meter cierto contenido interactivo y no ha habido ningún tipo de conflicto.
+The scraper has been integrated with Django to offer an interface in which the user can search by exact name of the property, location, price range and can also choose the number of results they want to obtain. 
+Internally, the application calls the scraper with these input arguments in the function, the inputs are checked at the filter level and when the set number of results is reached, it is returned to the user in the form of a table in a url.
+As a curiosity, we have experimented with a bit of JavaScript in Django to be able to put some interactive content and there has not been any kind of conflict.
+
+Translated with DeepL.com (free version)
